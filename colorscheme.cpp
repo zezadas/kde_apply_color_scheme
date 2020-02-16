@@ -9,6 +9,8 @@
 #include <QDBusConnection>
 #include <QDBusMessage>
 
+#include "krdb.h"
+
 //this is a partial copy of kcm colors
 
 int main() {
@@ -116,7 +118,7 @@ int main() {
 
     m_config->sync();
     
-    //runRdb(KRdbExportQtColors | KRdbExportGtkTheme | KRdbExportGtkColors | (m_applyToAlien ? KRdbExportColors : 0));
+    runRdb(KRdbExportQtColors | KRdbExportGtkTheme | KRdbExportGtkColors );
 
     //saveGtkColors(config);
 
